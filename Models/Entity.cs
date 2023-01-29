@@ -1,6 +1,13 @@
 ﻿namespace AppMvcProdutoFornecedor.Models
 {
-    public class Entity
+    public abstract class Entity
     {
+
+        protected Entity()
+        {
+            Id = Guid.NewGuid();    
+        }
+
+        public Guid Id { get; set; }
     }
 }

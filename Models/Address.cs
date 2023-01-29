@@ -1,6 +1,6 @@
 ﻿namespace AppMvcProdutoFornecedor.Models
 {
-    public class Address
+    public class Address : Entity
     {
     }
 }
