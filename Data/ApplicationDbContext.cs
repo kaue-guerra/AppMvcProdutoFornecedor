@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using AppMvcProdutoFornecedor.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace AppMvcProdutoFornecedor.Data
@@ -9,5 +10,9 @@ namespace AppMvcProdutoFornecedor.Data
             : base(options)
         {
         }
+
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Caterer> Caterers { get; set; }
+        public DbSet<Address> Addresses { get; set; }
     }
 }
