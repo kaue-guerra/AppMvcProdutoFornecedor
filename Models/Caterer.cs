@@ -15,6 +15,8 @@ namespace AppMvcProdutoFornecedor.Models
         [StringLength(14, ErrorMessage = "O campo {0} precisa ter entre {2} e {1} caracteres", MinimumLength = 11)]
         [DisplayName("CPF/CNPJ")]
         public string Document { get; set; }
+
+        [DisplayName("Tipo de Fornecedor")]
         public TypeCaterer TypeCaterer { get; set; }
         public Address Address { get; set; }
 
