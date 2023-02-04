@@ -23,6 +23,7 @@ namespace AppMvcProdutoFornecedor.Models
         [DisplayName("Ativo?")]
         public bool Active { get; set; }
 
+        [DisplayName("Produtos")]
         public IEnumerable<Product> Products { get; set; }
     }
 }

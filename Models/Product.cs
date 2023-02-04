@@ -25,11 +25,13 @@ namespace AppMvcProdutoFornecedor.Models
         [DisplayName("Valor")]
         public decimal Value { get; set; }
 
+        [DisplayName("Data Cadastro")]
         public DateTime Created_at { get; set; }
 
         [DisplayName("Ativo?")]
         public bool Active { get; set; }
 
+        [DisplayName("Fornecedor")]
         public Caterer Caterer { get; set; }
 
     }
